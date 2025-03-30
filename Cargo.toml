@@ -1,0 +1,10 @@
+[package]
+name = "rust-vban"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.97"
+clap = { version = "4.5.34", features = ["derive"] }
+cpal = "0.15.3"
+ringbuf = "0.4.8"
