@@ -204,7 +204,8 @@ fn transmitter(host: &Host, global_args: GlobalArgs, args: TransmitterArgs) -> a
 // TODO: handle different different types of samples(i24,i32,f32)
 // https://github.com/RustAudio/cpal/blob/master/examples/beep.rs
 // TODO: handle different amounts of channels
-// TODO: parse
+// TODO: parse the vban network stream config
+// https://vb-audio.com/Voicemeeter/VBANProtocol_Specifications.pdf
 // TODO: use the VBAN header in network communication.
 fn main() -> anyhow::Result<()> {
     let args = Args::parse();
