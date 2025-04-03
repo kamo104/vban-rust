@@ -199,14 +199,20 @@ fn transmitter(host: &Host, global_args: GlobalArgs, args: TransmitterArgs) -> a
         thread::sleep(Duration::from_secs(1));
     }
 }
-// TODO: use rust rubato for converting between sample rates
-// https://github.com/HEnquist/rubato
-// TODO: handle different different types of samples(i24,i32,f32)
-// https://github.com/RustAudio/cpal/blob/master/examples/beep.rs
-// TODO: handle different amounts of channels
 // TODO: parse the vban network stream config
 // https://vb-audio.com/Voicemeeter/VBANProtocol_Specifications.pdf
 // TODO: use the VBAN header in network communication.
+
+// TODO: use rust rubato for converting between sample rates
+// https://github.com/HEnquist/rubato
+
+// TODO: handle different different types of samples(i24,i32,f32)
+// https://github.com/RustAudio/cpal/blob/master/examples/beep.rs
+
+// TODO: handle different amounts of channels
+
+// TODO: consider using tauri+vuejs+nuxt_ui to create an app that incorporates these features
+// https://www.reddit.com/r/tauri/comments/1cxawd1/preventing_the_web_process_from_pausing_while_in/
 fn main() -> anyhow::Result<()> {
     let args = Args::parse();
     let global_args = args.global_args;
